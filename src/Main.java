@@ -4,10 +4,10 @@ public class Main {
         int payment = 1142;
         int bonus = 0;
 
-        if(payment > 1000){
-            int i = 0;
-            i = payment/100;
-            bonus = bonus + i;
+        if (payment > 1000) {
+            int bonusPlus = 0;
+            bonusPlus = payment / 100;
+            bonus = bonus + bonusPlus;
             balance = balance + payment + bonus;
         } else {
             balance = balance + payment;
